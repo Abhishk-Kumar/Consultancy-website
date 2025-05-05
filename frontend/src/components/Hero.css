@@ -1,0 +1,128 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    overflow: hidden;
+    padding-top: 80px;
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    text-align: center;
+    padding: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+    z-index: 2;
+  }
+  
+  .hero-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #007bff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .primary-btn, .secondary-btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .secondary-btn {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .primary-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .secondary-btn:hover {
+    background: rgba(0, 123, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .hero-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: white;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-stats {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
