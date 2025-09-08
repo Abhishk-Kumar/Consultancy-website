@@ -121,7 +121,7 @@ const Footer = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <p className="copyright">
-            &copy; {new Date().getFullYear()} Abhishek. All Rights Reserved
+            &copy; {new Date().getFullYear()} Swapnil. All Rights Reserved
           </p>
         </motion.div>
       </div>
